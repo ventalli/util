@@ -1,0 +1,5 @@
+#direcionamento site antigo para novo
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^siteantigo.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.siteantigo.com/$
+RewriteRule ^(.*)$ https://www.sitenovo.com.br/$1 [R=301,L]
